@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Automoviles deportivos S.A.</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xxl navbar-dark fixed-top navbar-APP-custom" aria-label="Seventh navbar example">
+        <div id="cajaNav" class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo" src="../images/logo.png" alt="Logo">Automoviles
+                deportivos
+                S.A.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl"
+                aria-controls="navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleXxl">
+                <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marcas.html">Marcas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-3 text-center contenidoGeneral">
+
+        <h2>Consultas</h2>
+
+        <form class="formConsultas">
+            <div class="row">
+                <div class="mb-3 mt-3 col-sm-12 label-left">
+                    <label for="nombreapellido" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su nombre y apellido" id="nombre"
+                        size="40">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="mb-3 mt-3 col-sm-12 label-left">
+                    <label for="email" class="form-label">E-Mail</label>
+                    <input type="email" class="form-control" placeholder="Ingrese su e-mail" id="email" size="40">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="mb-3 mt-3 col-sm-6 label-left">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su telefono" id="telefono" size="30">
+                </div>
+
+                <div class="mb-3 mt-3 col-sm-6 label-left">
+                    <label for="marcas" class="form-label">Marca</label>
+                    <select name="marcas" class="form-select">
+                        <option value="">Elegi una marca para informarte</option>
+                        <option value="P">Porsche</option>
+                        <option value="L">Lamborghini</option>
+                        <option value="M">Maserati</option>
+                        <option value="T">TVR</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="mb-3 mt-3 col-sm-12 label-left">
+                    <label for="consulta" class="form-label">Consulta</label>
+                    <textarea rows="10" style="width: 100%;" placeholder="Ingrese su consulta"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="mb-3 mt-3 col-sm-3 label-left">
+                    <label id="lblEmpresa" for="empresa" class="form-check-label">Empresa</label>
+                    <input type="radio" class="form-check-input" value="empresa" id="radEmpresa" name="radTipoCliente">
+
+                    <label id="lblParticular" for="particular" class="form-check-label">Particular</label>
+                    <input type="radio" class="form-check-input" value="particular" id="radParticular" name="radTipoCliente">
+                </div>
+
+                <div class="mb-3 mt-3 col-sm-7">
+                    <!-- Espacio para hacer lugar -->
+                </div>
+
+                <div class="mb-3 mt-3 col-sm-2 label-left">
+                    <input type="checkbox" class="form-check-input" id="checkinformado" value="1">
+                    <label for="check" class="form-check-label">Mantenerme informado</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <input id="btnEnviar" class="btn btn-primary" type="submit" value="Enviar">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-center fixed-bottom footer">
+        <div class="text-center p-3">
+            © 2022 Nicolas G. Borrelli&nbsp;&nbsp;·&nbsp;
+            <a class="text-white" href="https://github.com/ngborrelli/AgenciaAutosDeportivosBorrelli/">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="../bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

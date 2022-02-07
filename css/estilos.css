@@ -1,0 +1,361 @@
+/* Clases para todas las paginas */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #f0f0f0 !important;
+    font-family: Roboto, Helvetica, sans-serif !important;
+    background-color: #0f0f0f;
+}
+
+/*---------------------------------------------------------------------------*/
+
+.navbar-APP-custom, .navbar-APP-custom .navbar-brand, .navbar-APP-custom .container-fluid  {
+    margin: 0px !important; 
+    padding: 0px !important;
+}
+
+.navbar-APP-custom .navbar-brand {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #f0f0f0 !important;
+}
+
+.navbar-APP-custom .container-fluid {
+    background-color: #0f0f0f;
+}
+
+.navbar-APP-custom .navbar-nav a {
+    text-transform: uppercase !important;
+    color: #f0f0f0 !important;
+    padding-right: 15px !important;
+    color:#f0f0f0 !important;
+}
+
+.navbar-APP-custom ul a:hover {
+    color:#fff !important;
+}
+
+.navbar-APP-custom .navbar-toggler {
+    margin-right: 10px;
+    font-size: 1.5rem !important;
+    border: 0px;
+}
+
+.navbar-APP-custom .navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.logo {
+    margin-right: 15px;
+}
+
+/*---------------------------------------------------------------------------*/
+
+.contenidoGeneral {
+    padding: 60px 100px 60px 100px;
+    text-align: justify;
+}
+
+.contenidoGeneral h2 {
+    width: 100%;
+}
+
+/*---------------------------------------------------------------------------*/
+
+.footer {
+    margin-top: 30px;
+}
+
+.footer div {
+    background-color: #0f0f0f;
+    border-top: 1px solid gray;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #00ca87 !important;
+}
+
+.footer a:hover {
+    color: #00ffaa !important;
+}
+
+/* Clases para index.html */
+
+.fotoIndex {
+    margin: 0px; 
+    padding: 0px;
+}
+
+.cajaTextoIndex {
+    margin-top: 20px;
+    text-align: justify;
+    padding: 0px 30px 0px 30px;
+}
+
+/* Clases para nosotros.html */
+
+.nav-APP-interno {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-APP-interno a {
+    color: #f0f0f0;
+    background-color: #0f0f0f !important;
+}
+
+.nav-APP-interno a.active {
+    border: 1px solid #f0f0f0 !important;
+}
+
+.nav-APP-interno a:hover {
+    color: #fff;
+}
+
+.tab-APP h3 {
+    margin-bottom: 25px;
+}
+
+.label-left {
+    text-align: left;
+}
+
+/* Clases para contacto.html */
+
+.cajaContacto {
+    display: grid;
+    grid-template-areas:
+        "cajaCiudad cajaCiudad"
+        "cajaCiudad cajaCiudad"
+        "cajaMapa cajaDireccion"
+        "cajaMapa cajaDireccion"
+        "cajaMapa cajaTelefono"
+        "cajaMapa cajaTelefono"
+        "cajaMapa cajaTelefono"
+        "cajaMapa cajaTelefono";
+    grid-template-columns: 50%;
+    grid-template-rows: 12.5%;
+    padding: 4px;
+    margin: 10px;
+    background-color: #181818;
+    border: 2px solid #202020;
+}
+
+.cajaContacto div {
+    padding: 4px;
+}
+
+.cajaCiudad {
+    grid-area: cajaCiudad;
+    text-align: left !important;
+}
+
+.cajaCiudad h1 {
+    font-size: 1.3rem !important;
+    font-weight: bold;
+}
+
+.cajaMapa {
+    grid-area: cajaMapa;
+}
+
+.cajaMapa iframe {
+    width: 100%;
+    height: 260px;
+    border: 1px solid #000;
+}
+
+.cajaDireccion {
+    grid-area: cajaDireccion;
+    background: url('../images/location.png') no-repeat center 0px;
+    background-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajaDireccion h1 {
+    font-size: 1.1rem;
+}
+
+.cajaDireccion h2 {
+    font-size: 0.9rem;
+}
+
+.cajaTelefono {
+    grid-area: cajaTelefono;
+    background: url('../images/phone.png') no-repeat center 25px;
+    background-size: 30px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajaTelefono h2 {
+    font-size: 1rem !important;
+}
+
+/* Clases para marcas.html */
+
+.cajaMarca {
+    width: 100%;
+    margin: 5px;
+    display: grid;
+    align-items: start;
+    grid-template-areas:
+      "marcaImagen marcaLink"
+      "marcaImagen marcaTexto";
+    
+    grid-gap: 0px;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 120px 1fr;
+}
+
+.cajaMarcaImagen {
+    grid-area: marcaImagen;
+    float: left;
+    height: 100%;
+    margin: 10px;  
+}
+
+.cajaMarcaImagen img {
+    height: 100px;
+}
+
+.cajaMarcaLink {
+    grid-area: marcaLink;
+    text-align: left !important;
+}
+
+.cajaMarcaLink a {
+    text-decoration: none;
+    line-height: 60px;
+    color: #f0f0f0;
+}
+
+.cajaMarcaLink a:hover {
+    color: #fff;
+}
+
+.cajaTextoMarca {
+    grid-area: marcaTexto;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+/*---------------------------------------------------------------------------*/
+/* Media Query para compatibilizar con bootstrap ----------------------------*/
+/*---------------------------------------------------------------------------*/
+
+@media (max-width: 1400px) {
+
+    .navbar-APP-custom .navbar-toggler-icon {
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    .navbar-APP-custom {
+        border-bottom: 1px solid gray;
+    }
+}
+
+/*---------------------------------------------------------------------------*/
+/* Media Query para Smartphone ----------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+@media (max-width: 570px) {
+
+    .navbar-APP-custom .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .navbar-APP-custom .navbar-toggler {
+        margin-bottom: 10px;
+        font-size: 1.2rem !important;
+    }
+    
+    .navbar-APP-custom .navbar-toggler-icon {
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    .contenidoGeneral {
+        padding: 90px 10px 60px 10px;
+    }
+
+    .fotoIndex {
+        padding-top: 90px;
+    }
+
+    /* Smartphone contacto.html */
+
+    .contenidoGeneral.contacto {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cajaContacto {
+        width: 90%;
+        display: grid;
+        grid-template-areas:
+            "cajaCiudad"
+            "cajaMapa"
+            "cajaDireccion"
+            "cajaTelefono";
+        grid-template-columns: 100%;
+        justify-items: center;
+        padding: 4px;
+        background-color: #181818;
+        border: 2px solid #202020;
+    }
+
+    .cajaDireccion {
+        background: url('../images/location.png') no-repeat center left;
+        width: 100%;
+    }
+
+    .cajaDireccion h1 {
+        font-size: 1rem;
+    }
+
+    .cajaDirecttion h2 {
+        font-size: 0.8rem;
+    }
+
+    .cajaTelefono {
+        background: url('../images/phone.png') no-repeat center left;
+        width: 100%;
+    }
+
+    /* Smartphone marcas.html */
+
+    .cajaMarca {
+        grid-template-areas:
+        "marcaLink"
+        "marcaImagen"
+        "marcaTexto";
+        grid-template-rows: auto auto 1fr;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    .cajaTextoMarca {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .cajaMarcaLink {
+        text-align: center !important;
+    }
+}
